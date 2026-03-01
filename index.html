@@ -3,134 +3,233 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evangelho da Carne</title>
+<title>Liber Apocryphus — Tomo I</title>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    background: black;
-    color: #8b0000;
-    font-family: Georgia, serif;
-    text-align: center;
-    overflow-x: hidden;
-    transition: 1.5s;
+body{
+    margin:0;
+    background:radial-gradient(circle at center,#2b1a0f 0%,#120a05 100%);
+    font-family:"Garamond",serif;
+    color:#3b0000;
+    overflow:hidden;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 60px 20px;
+.livro-container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    perspective:2000px;
 }
 
-button {
-    margin-top: 30px;
-    padding: 15px 35px;
-    font-size: 18px;
-    background: transparent;
-    border: 2px solid #8b0000;
-    color: #8b0000;
-    cursor: pointer;
-    transition: 0.3s;
+.pagina{
+    display:none;
+    background:#f4e7c5;
+    padding:70px;
+    min-height:75vh;
+    border:8px solid #3b0000;
+    box-shadow:0 0 100px black inset;
+    animation:abrir 1s ease forwards;
 }
 
-button:hover {
-    background: #8b0000;
-    color: black;
-    box-shadow: 0 0 20px red;
+@keyframes abrir{
+    from{transform:rotateY(-90deg);opacity:0;}
+    to{transform:rotateY(0deg);opacity:1;}
 }
 
-h1 {
-    animation: pulse 2s infinite alternate;
+h1,h2{
+    text-align:center;
+    letter-spacing:3px;
 }
 
-@keyframes pulse {
-    from { text-shadow: 0 0 10px red; }
-    to { text-shadow: 0 0 30px darkred; }
+h1{
+    margin-bottom:40px;
 }
 
-.hidden {
-    display: none;
+h2{
+    margin-top:40px;
+    border-bottom:1px solid #5a0000;
+    padding-bottom:10px;
 }
 
-.verso {
-    margin: 20px 0;
-    font-size: 18px;
-    opacity: 0;
-    animation: fadeIn 3s forwards;
+.verso{
+    margin:20px 0;
+    line-height:1.9;
+    font-size:19px;
+    text-align:justify;
 }
 
-@keyframes fadeIn {
-    to { opacity: 1; }
+.verso::first-letter{
+    font-size:48px;
+    float:left;
+    margin-right:8px;
+    font-weight:bold;
+}
+
+.controles{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+button{
+    padding:12px 30px;
+    margin:10px;
+    background:transparent;
+    border:2px solid #aa0000;
+    color:#aa0000;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#aa0000;
+    color:black;
+}
+
+.selo{
+    text-align:center;
+    margin-top:50px;
+    font-size:26px;
+    letter-spacing:6px;
 }
 </style>
 </head>
-
 <body>
 
-<div class="container" id="warning">
-    <h1>⚠️ LIMIAR ⚠️</h1>
-    <p id="text">Nem toda carne está pronta para a verdade.</p>
-    <button onclick="next()">Prosseguir</button>
+<div class="livro-container">
+
+<!-- PÁGINA 1 -->
+<div class="pagina" id="p1">
+<h1>LIBER APOCRYPHUS</h1>
+<h2>PRÓLOGO</h2>
+
+<p class="verso"><strong>1.</strong> Este tomo não foi escrito para os apressados, nem para os que buscam consolo superficial; foi gravado na memória da experiência humana, onde a carne encontra o peso do existir e aprende que profundidade não é maldição, mas condição inevitável da consciência.</p>
+
+<p class="verso"><strong>2.</strong> Aquele que aqui lê deve compreender que cada palavra não acusa, não condena, não promete salvação, mas revela o processo silencioso pelo qual o ser humano amadurece ao confrontar a própria interioridade.</p>
+
+<p class="verso"><strong>3.</strong> Assim começa a jornada daquele que ousou descer e retornar.</p>
 </div>
 
-<div class="container hidden" id="evangelho">
-    <h1>📜 VERSÍCULOS DA CARNE 📜</h1>
+<!-- PÁGINA 2 -->
+<div class="pagina" id="p2">
+<h2>CAPÍTULO I — DA DESCIDA</h2>
 
-    <p class="verso">I — Desci às profundezas da minha própria matéria e encontrei não luz, mas pulsação crua. 
-Ali, onde o silêncio tem peso e a respiração é densa como ferro úmido, compreendi que a carne não é frágil — 
-é memória viva do que foi esquecido nas sombras.</p>
-    <p class="verso">II — A treva infiltrou-se em mim como neblina espessa, não para destruir, mas para revelar 
-as fissuras que eu escondia sob a superfície. 
-Cada medo apodreceu lentamente até tornar-se força, 
-e cada culpa dissolveu-se como sal na escuridão morna do abismo.</p>
-    <p class="verso">III — Meu corpo tornou-se templo abandonado onde ecos antigos sussurram verdades que a luz jamais suportaria ouvir. 
-Nas galerias internas do meu ser, algo desperta, lento e inevitável, 
-como ferrugem que consome o metal até que reste apenas essência.</p>
-    <p class="verso">IV — A carne tremeu diante do vazio, mas não recuou. 
-Abraçou o negror como quem aceita a própria origem, 
-como quem reconhece que o caos não é inimigo, 
-mas ventre onde toda transformação começa.</p>
-    <p class="verso">V — A noite tentou devorar-me, mas encontrou resistência enraizada nos ossos. 
-Não fui dissolvido; fui moldado. 
-Cada sombra que tocou minha pele deixou marca, 
-e cada marca tornou-se sinal de que sobrevivi ao que me queria apagar.</p>
-    <p class="verso">VI — O medo apodreceu dentro de mim até perder o odor da ameaça. 
-Restou apenas matéria bruta, 
-pulsando em silêncio, 
-como um coração que aprendeu a bater no escuro sem pedir aurora.</p>
-    <p class="verso">VII — Já não caminho à margem da escuridão. 
-Sou parte dela, como cicatriz que a noite carrega sem admitir. 
-Sou lembrança viva de que o abismo não consome todos — 
-alguns retornam diferentes.</p>
-    <p class="verso">VIII — E no centro da carne, onde pulsa o indizível, 
-ergue-se uma verdade sem nome: 
-não há queda quando se escolhe mergulhar. 
-Há apenas transformação.</p>
+<p class="verso"><strong>1.</strong> No início da percepção inquieta, quando o homem ainda fugia de si mesmo, desceu às profundezas internas e encontrou não condenação, mas pulsação antiga que vibrava como tambor sob a terra úmida do ser.</p>
 
-    <p style="margin-top:40px; color:#550000;">𓆩鬼鮫𓆪</p>
+<p class="verso"><strong>2.</strong> A escuridão revelou-se não como inimiga, mas como espelho ampliado, onde cada falha se tornava visível e cada medo exigia nome.</p>
+
+<p class="verso"><strong>3.</strong> E ao nomear seus temores, percebeu que metade de sua angústia era ignorância da própria força.</p>
+
+<p class="verso"><strong>4.</strong> Pois ninguém conhece a solidez da própria estrutura enquanto permanece na superfície.</p>
+</div>
+
+<!-- PÁGINA 3 -->
+<div class="pagina" id="p3">
+<h2>CAPÍTULO II — DAS SOMBRAS</h2>
+
+<p class="verso"><strong>1.</strong> A sombra não é ausência de luz, mas consequência dela; onde há consciência, há também contraste.</p>
+
+<p class="verso"><strong>2.</strong> Cada falha exposta tornou-se ferramenta de lapidação, cada vergonha tornou-se degrau invisível.</p>
+
+<p class="verso"><strong>3.</strong> Aprendeu-se que fugir prolonga o medo, mas encarar dissolve a ilusão.</p>
+
+<p class="verso"><strong>4.</strong> E aquele que permanece diante do próprio abismo descobre que o abismo também o contempla — não para destruir, mas para revelar profundidade.</p>
+</div>
+
+<!-- PÁGINA 4 -->
+<div class="pagina" id="p4">
+<h2>CAPÍTULO III — DA RESISTÊNCIA</h2>
+
+<p class="verso"><strong>1.</strong> A noite tentou dobrar-lhe os joelhos, mas encontrou ossos firmes moldados por quedas anteriores.</p>
+
+<p class="verso"><strong>2.</strong> Cada cicatriz tornou-se símbolo não de fraqueza, mas de permanência.</p>
+
+<p class="verso"><strong>3.</strong> Resistir não é endurecer; é manter-se consciente enquanto atravessa o desconforto.</p>
+
+<p class="verso"><strong>4.</strong> Assim se constrói a integridade: não pela ausência de dor, mas pela permanência apesar dela.</p>
+</div>
+
+<!-- PÁGINA 5 -->
+<div class="pagina" id="p5">
+<h2>CAPÍTULO IV — DA TRANSFORMAÇÃO</h2>
+
+<p class="verso"><strong>1.</strong> O metal submetido ao fogo não se queixa do calor; revela sua forma oculta.</p>
+
+<p class="verso"><strong>2.</strong> A consciência submetida à reflexão não se dissolve; amadurece.</p>
+
+<p class="verso"><strong>3.</strong> Assim, o ser humano torna-se inteiro não ao evitar profundidade, mas ao atravessá-la.</p>
+
+<p class="verso"><strong>4.</strong> Não há queda quando o mergulho é consciente.</p>
+</div>
+
+<!-- PÁGINA 6 -->
+<div class="pagina" id="p6">
+<h2>CAPÍTULO V — DA MATURIDADE</h2>
+
+<p class="verso"><strong>1.</strong> A maturidade não nasce da idade, mas do enfrentamento.</p>
+
+<p class="verso"><strong>2.</strong> Quem suporta o próprio silêncio aprende a ouvir além do ruído externo.</p>
+
+<p class="verso"><strong>3.</strong> E aquele que enfrenta sua própria complexidade deixa de temer a dos outros.</p>
+</div>
+
+<!-- PÁGINA 7 -->
+<div class="pagina" id="p7">
+<h2>CAPÍTULO VI — DO RETORNO</h2>
+
+<p class="verso"><strong>1.</strong> Nem todos que descem retornam iguais; alguns retornam lúcidos.</p>
+
+<p class="verso"><strong>2.</strong> O retorno não apaga o caminho percorrido; integra-o.</p>
+
+<p class="verso"><strong>3.</strong> E aquele que retorna diferente torna-se farol não por brilho, mas por profundidade.</p>
+</div>
+
+<!-- PÁGINA 8 -->
+<div class="pagina" id="p8">
+<h2>EPÍLOGO</h2>
+
+<p class="verso"><strong>1.</strong> Assim termina este tomo, não com sentença, mas com compreensão.</p>
+
+<p class="verso"><strong>2.</strong> A carne não é prisão; é experiência.</p>
+
+<p class="verso"><strong>3.</strong> A sombra não é condenação; é contraste.</p>
+
+<p class="verso"><strong>4.</strong> E o ser humano não é frágil por sentir — é profundo por suportar.</p>
+
+<div class="selo">✠ 𓆩鬼鮫𓆪 ✠</div>
+</div>
+
+</div>
+
+<div class="controles">
+<button onclick="anterior()">← Página Anterior</button>
+<button onclick="proxima()">Próxima Página →</button>
 </div>
 
 <script>
-let fase = 0;
+let paginaAtual=1;
+const totalPaginas=8;
 
-function next(){
-    fase++;
-    const text = document.getElementById("text");
-
-    if(fase === 1){
-        text.innerHTML = "Tem certeza que deseja atravessar?";
-    }
-    else if(fase === 2){
-        text.innerHTML = "Depois disso, algo dentro de você pode mudar.";
-    }
-    else if(fase === 3){
-        document.body.style.background = "#0a0000";
-        document.getElementById("warning").classList.add("hidden");
-        document.getElementById("evangelho").classList.remove("hidden");
-        document.body.style.overflowY = "auto";
-    }
+function mostrarPagina(num){
+for(let i=1;i<=totalPaginas;i++){
+document.getElementById("p"+i).style.display="none";
 }
+document.getElementById("p"+num).style.display="block";
+}
+
+function proxima(){
+if(paginaAtual<totalPaginas){
+paginaAtual++;
+mostrarPagina(paginaAtual);
+}
+}
+
+function anterior(){
+if(paginaAtual>1){
+paginaAtual--;
+mostrarPagina(paginaAtual);
+}
+}
+
+mostrarPagina(paginaAtual);
 </script>
 
 </body>
