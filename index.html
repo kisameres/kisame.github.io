@@ -14,6 +14,7 @@ body{
     font-family:Georgia,serif;
     text-align:center;
     transition:1.5s;
+    overflow:hidden;
 }
 
 .container{
@@ -38,7 +39,7 @@ h1,h2{
 .verso{
     margin:40px 0;
     font-size:19px;
-    line-height:1.8;
+    line-height:1.9;
     text-align:justify;
 }
 
@@ -59,6 +60,10 @@ button:hover{
     box-shadow:0 0 25px red;
 }
 
+.hidden{
+    display:none;
+}
+
 @keyframes fade{
     from{opacity:0;}
     to{opacity:1;}
@@ -68,38 +73,63 @@ button:hover{
 
 <body>
 
-<div class="container">
+<!-- AVISOS -->
+<div class="container" id="avisos">
+<h1>⚠️ LIMIAR ⚠️</h1>
+<p id="avisoTexto">Nem toda mente está preparada para atravessar o que será revelado.</p>
+<button onclick="proximoAviso()">Prosseguir</button>
+</div>
+
+<!-- LIVRO -->
+<div class="container hidden" id="livro">
 
 <h1>📜 EVANGELHO DA CARNE 📜</h1>
 
 <!-- PÁGINA 1 -->
 <div class="pagina ativa" id="p1">
-<h2>CAPÍTULO I — DO ABISMO INTERNO</h2>
+<h2>CAPÍTULO I — DO ABISMO</h2>
 
-<p class="verso"><strong>I.</strong> No instante em que abandonei a superfície confortável das certezas herdadas e permiti que minha consciência descesse às camadas profundas da própria existência, encontrei não respostas prontas, nem redenção imediata, mas uma vastidão silenciosa que respirava lentamente dentro de mim, como se cada memória esquecida, cada dor mal resolvida e cada desejo reprimido aguardassem pacientemente o momento em que eu teria coragem suficiente para encará-los sem desviar o olhar, compreendendo enfim que a verdadeira queda não é descer às sombras, mas viver eternamente fugindo delas.</p>
+<p class="verso"><strong>I.</strong> No momento em que abandonei as certezas frágeis que sustentavam minha superfície e permiti que minha consciência descesse às profundezas da própria estrutura interna, encontrei não condenação, mas vastidão, não punição, mas silêncio pulsante, onde cada memória reprimida aguardava reconhecimento e cada dor mal resolvida exigia ser encarada com maturidade suficiente para não mais fugir daquilo que sempre existiu.</p>
 
-<p class="verso"><strong>II.</strong> E quanto mais avançava por esse território interior onde a carne pulsa como testemunha do tempo e da experiência, mais percebia que aquilo que chamamos de fraqueza é, muitas vezes, apenas a incapacidade temporária de suportar a própria intensidade, pois dentro de cada ser humano existe uma força primitiva que não pede aprovação, não implora por luz, e não teme a escuridão, mas apenas espera reconhecimento para que possa transformar o caos interno em estrutura, a dor em fundamento e o medo em impulso criador.</p>
+<p class="verso"><strong>II.</strong> E quanto mais avançava por esse território interior, mais percebia que a carne não é fraqueza, mas arquivo vivo de tudo o que fomos, somos e tememos ser, guardando em suas fibras as marcas do tempo, as cicatrizes invisíveis das escolhas e a energia acumulada de cada batalha silenciosa travada contra o próprio medo.</p>
 </div>
 
 <!-- PÁGINA 2 -->
 <div class="pagina" id="p2">
-<h2>CAPÍTULO II — DA TRANSFORMAÇÃO</h2>
+<h2>CAPÍTULO II — DA RUPTURA</h2>
 
-<p class="verso"><strong>III.</strong> A carne, que tantos acusam de ser prisão da alma, revelou-se diante de mim como instrumento sagrado de experiência, pois é através dela que sentimos o peso da perda, o calor do desejo, o tremor da ansiedade e o êxtase da superação, e ao compreender que nada disso é acidente, mas parte do processo inevitável de tornar-se algo maior do que a própria versão anterior, aceitei que transformação não ocorre na superfície da vida, mas nas profundezas onde a estrutura antiga precisa primeiro ruir para que uma nova forma possa emergir com firmeza inabalável.</p>
+<p class="verso"><strong>III.</strong> Nada se transforma sem primeiro se romper, e nenhuma estrutura interna permanece intacta quando confrontada pela verdade que insiste em emergir das sombras, pois aquilo que evitamos cresce silenciosamente até exigir presença, até impor confronto, até forçar amadurecimento.</p>
 
-<p class="verso"><strong>IV.</strong> Não há renascimento sem confronto, não há maturidade sem ruptura, e não há poder real sem atravessar períodos de vulnerabilidade extrema, pois é justamente quando nos vemos expostos, desprotegidos e confrontados pela própria limitação que descobrimos a extensão verdadeira da nossa capacidade de adaptação, resistência e reinvenção, entendendo que cada cicatriz não é sinal de destruição, mas marca de reconstrução consciente.</p>
+<p class="verso"><strong>IV.</strong> A dor revelou-se não como inimiga, mas como ferramenta severa de lapidação, retirando excessos, queimando ilusões e expondo a essência que permanecia escondida sob camadas de negação e fuga.</p>
 </div>
 
 <!-- PÁGINA 3 -->
 <div class="pagina" id="p3">
-<h2>CAPÍTULO III — DA PERMANÊNCIA</h2>
+<h2>CAPÍTULO III — DA CONSCIÊNCIA</h2>
 
-<p class="verso"><strong>V.</strong> Assim compreendi que não sou vítima do abismo que atravessei, mas produto refinado dele, pois tudo aquilo que não me dissolveu serviu como ferramenta de lapidação, moldando meus limites, expandindo minha percepção e fortalecendo minhas raízes, de modo que hoje não caminho temendo a escuridão, mas reconhecendo-a como parte integrante da paisagem que compõe a totalidade da existência, sabendo que apenas quem ousa mergulhar retorna com profundidade suficiente para sustentar o próprio peso sem vacilar.</p>
+<p class="verso"><strong>V.</strong> Quando aceitei que não havia retorno à ignorância confortável, compreendi que a consciência é peso e privilégio ao mesmo tempo, pois enxergar a própria complexidade exige coragem para sustentar contradições, ambiguidades e impulsos conflitantes sem desmoronar.</p>
 
-<p class="verso"><strong>VI.</strong> E se ainda restar dúvida sobre o sentido dessa travessia, que se recorde que nada verdadeiramente grandioso nasce intacto, nada verdadeiramente forte surge sem tensão, e nada verdadeiramente consciente floresce sem antes confrontar aquilo que mais teme, pois é no confronto com o desconhecido que o ser humano deixa de ser espectador da própria história e passa a ser autor deliberado do próprio destino.</p>
+<p class="verso"><strong>VI.</strong> E nessa aceitação encontrei estabilidade, não por eliminar minhas sombras, mas por integrá-las à totalidade do que sou.</p>
 </div>
 
-<!-- CONTROLES -->
+<!-- PÁGINA 4 -->
+<div class="pagina" id="p4">
+<h2>CAPÍTULO IV — DA PERMANÊNCIA</h2>
+
+<p class="verso"><strong>VII.</strong> Permanecer após o confronto é prova de resistência real, pois muitos atravessam a escuridão, mas poucos retornam conscientes, trazendo consigo a maturidade que só o abismo concede àqueles que ousam olhar para dentro sem desviar.</p>
+
+<p class="verso"><strong>VIII.</strong> Não sou o mesmo que iniciou a travessia, pois cada camada removida revelou outra mais profunda, e cada revelação expandiu meus limites internos.</p>
+</div>
+
+<!-- PÁGINA 5 -->
+<div class="pagina" id="p5">
+<h2>CAPÍTULO V — DA TRANSFORMAÇÃO</h2>
+
+<p class="verso"><strong>IX.</strong> A transformação não ocorreu como explosão repentina, mas como processo contínuo de reconstrução interna, onde cada fragmento antigo serviu de base para uma estrutura mais sólida e consciente.</p>
+
+<p class="verso"><strong>X.</strong> E assim permaneço, não imune à escuridão, mas integrado a ela, sabendo que aquilo que enfrentamos com coragem torna-se parte da nossa força.</p>
+</div>
+
 <div>
 <button onclick="voltar()">◀ Página Anterior</button>
 <button onclick="avancar()">Próxima Página ▶</button>
@@ -108,8 +138,27 @@ button:hover{
 </div>
 
 <script>
+let avisoFase = 0;
+
+function proximoAviso(){
+    avisoFase++;
+    const texto = document.getElementById("avisoTexto");
+
+    if(avisoFase === 1){
+        texto.innerHTML = "Depois de atravessar, não haverá retorno à ignorância confortável.";
+    }
+    else if(avisoFase === 2){
+        texto.innerHTML = "A responsabilidade da leitura será inteiramente sua.";
+    }
+    else if(avisoFase === 3){
+        document.body.style.overflowY = "auto";
+        document.getElementById("avisos").classList.add("hidden");
+        document.getElementById("livro").classList.remove("hidden");
+    }
+}
+
 let paginaAtual = 1;
-const totalPaginas = 3;
+const totalPaginas = 5;
 
 function mostrarPagina(num){
     for(let i=1;i<=totalPaginas;i++){
