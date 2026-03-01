@@ -3,175 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liber Apocryphus — Tomo Maior</title>
+<title>Evangelho da Carne</title>
 
 <style>
 body{
     margin:0;
-    background:radial-gradient(circle at center,#2b1a0f 0%,#120a05 100%);
-    font-family:"Garamond",serif;
-    color:#3b0000;
-    overflow:hidden;
+    padding:0;
+    background:black;
+    color:#8b0000;
+    font-family:Georgia,serif;
+    text-align:center;
+    transition:1.5s;
 }
 
-.livro-container{
-    width:90%;
-    max-width:1100px;
-    margin:40px auto;
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+h1,h2{
+    text-shadow:0 0 20px red;
 }
 
 .pagina{
     display:none;
-    background:#f4e7c5;
-    padding:80px;
-    min-height:75vh;
-    border:10px solid #3b0000;
-    box-shadow:0 0 120px black inset;
-    animation:fade 0.6s ease;
+    animation:fade 2s forwards;
 }
 
-.pagina.ativa{
+.ativa{
     display:block;
+}
+
+.verso{
+    margin:40px 0;
+    font-size:19px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+button{
+    margin:20px;
+    padding:15px 40px;
+    font-size:18px;
+    background:transparent;
+    border:2px solid #8b0000;
+    color:#8b0000;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    background:#8b0000;
+    color:black;
+    box-shadow:0 0 25px red;
 }
 
 @keyframes fade{
     from{opacity:0;}
     to{opacity:1;}
 }
-
-h1,h2{
-    text-align:center;
-    letter-spacing:3px;
-}
-
-.verso{
-    margin:30px 0;
-    line-height:2;
-    text-align:justify;
-    font-size:20px;
-}
-
-.verso::first-letter{
-    font-size:60px;
-    float:left;
-    margin-right:10px;
-    font-weight:bold;
-}
-
-.controles{
-    text-align:center;
-    margin-bottom:40px;
-}
-
-button{
-    padding:14px 35px;
-    margin:10px;
-    background:transparent;
-    border:2px solid #aa0000;
-    color:#aa0000;
-    cursor:pointer;
-    font-size:16px;
-}
-
-button:hover{
-    background:#aa0000;
-    color:black;
-}
 </style>
 </head>
+
 <body>
 
-<div class="livro-container">
+<div class="container">
+
+<h1>📜 EVANGELHO DA CARNE 📜</h1>
 
 <!-- PÁGINA 1 -->
-<div class="pagina ativa">
-<h1>LIBER APOCRYPHUS</h1>
-<h2>PRÓLOGO</h2>
+<div class="pagina ativa" id="p1">
+<h2>CAPÍTULO I — DO ABISMO INTERNO</h2>
 
-<p class="verso"><strong>1.</strong> Este tomo não foi escrito para os apressados, nem para aqueles que buscam frases curtas que confortem rapidamente a inquietação superficial do espírito; ele foi concebido como um mergulho deliberado e consciente nas camadas profundas da experiência humana, onde a carne, a mente e a memória se entrelaçam de maneira inseparável, revelando que a existência não é simples nem linear, mas vasta, contraditória e repleta de zonas onde luz e sombra coexistem em tensão constante.</p>
+<p class="verso"><strong>I.</strong> No instante em que abandonei a superfície confortável das certezas herdadas e permiti que minha consciência descesse às camadas profundas da própria existência, encontrei não respostas prontas, nem redenção imediata, mas uma vastidão silenciosa que respirava lentamente dentro de mim, como se cada memória esquecida, cada dor mal resolvida e cada desejo reprimido aguardassem pacientemente o momento em que eu teria coragem suficiente para encará-los sem desviar o olhar, compreendendo enfim que a verdadeira queda não é descer às sombras, mas viver eternamente fugindo delas.</p>
 
-<p class="verso"><strong>2.</strong> Aquele que aqui permanece lendo deve compreender que cada linha não foi criada para impressionar, mas para provocar reflexão prolongada, para sustentar o peso da própria consciência diante da complexidade interna que todos carregam, ainda que poucos tenham coragem de admitir, pois reconhecer a própria profundidade exige abandonar ilusões confortáveis.</p>
-
+<p class="verso"><strong>II.</strong> E quanto mais avançava por esse território interior onde a carne pulsa como testemunha do tempo e da experiência, mais percebia que aquilo que chamamos de fraqueza é, muitas vezes, apenas a incapacidade temporária de suportar a própria intensidade, pois dentro de cada ser humano existe uma força primitiva que não pede aprovação, não implora por luz, e não teme a escuridão, mas apenas espera reconhecimento para que possa transformar o caos interno em estrutura, a dor em fundamento e o medo em impulso criador.</p>
 </div>
 
 <!-- PÁGINA 2 -->
-<div class="pagina">
-<h2>CAPÍTULO I — DA DESCIDA</h2>
+<div class="pagina" id="p2">
+<h2>CAPÍTULO II — DA TRANSFORMAÇÃO</h2>
 
-<p class="verso"><strong>1.</strong> No momento em que deixei de fugir dos meus próprios pensamentos e permiti que o silêncio se tornasse espelho, percebi que a descida não era um ato de queda, mas de investigação interior, um movimento intencional em direção às áreas negligenciadas da minha própria história, onde experiências mal resolvidas, decisões impensadas e emoções reprimidas permaneciam como ecos distantes aguardando reconhecimento.</p>
+<p class="verso"><strong>III.</strong> A carne, que tantos acusam de ser prisão da alma, revelou-se diante de mim como instrumento sagrado de experiência, pois é através dela que sentimos o peso da perda, o calor do desejo, o tremor da ansiedade e o êxtase da superação, e ao compreender que nada disso é acidente, mas parte do processo inevitável de tornar-se algo maior do que a própria versão anterior, aceitei que transformação não ocorre na superfície da vida, mas nas profundezas onde a estrutura antiga precisa primeiro ruir para que uma nova forma possa emergir com firmeza inabalável.</p>
 
-<p class="verso"><strong>2.</strong> E quanto mais profundo eu avançava nesse território interno, mais evidente se tornava que o medo que me acompanhava durante anos não era sinal de fraqueza essencial, mas reação natural diante da vastidão desconhecida que habita cada ser humano e que raramente é explorada com honestidade.</p>
-
+<p class="verso"><strong>IV.</strong> Não há renascimento sem confronto, não há maturidade sem ruptura, e não há poder real sem atravessar períodos de vulnerabilidade extrema, pois é justamente quando nos vemos expostos, desprotegidos e confrontados pela própria limitação que descobrimos a extensão verdadeira da nossa capacidade de adaptação, resistência e reinvenção, entendendo que cada cicatriz não é sinal de destruição, mas marca de reconstrução consciente.</p>
 </div>
 
 <!-- PÁGINA 3 -->
-<div class="pagina">
-<h2>CAPÍTULO II — DAS SOMBRAS</h2>
+<div class="pagina" id="p3">
+<h2>CAPÍTULO III — DA PERMANÊNCIA</h2>
 
-<p class="verso"><strong>1.</strong> A sombra não se revelou como entidade externa que desejava minha ruína, mas como conjunto de aspectos negligenciados da minha própria identidade, fragmentos esquecidos que exigiam integração para que eu pudesse me tornar inteiro, pois aquilo que rejeitamos em nós mesmos não desaparece — apenas se oculta e cresce silenciosamente.</p>
+<p class="verso"><strong>V.</strong> Assim compreendi que não sou vítima do abismo que atravessei, mas produto refinado dele, pois tudo aquilo que não me dissolveu serviu como ferramenta de lapidação, moldando meus limites, expandindo minha percepção e fortalecendo minhas raízes, de modo que hoje não caminho temendo a escuridão, mas reconhecendo-a como parte integrante da paisagem que compõe a totalidade da existência, sabendo que apenas quem ousa mergulhar retorna com profundidade suficiente para sustentar o próprio peso sem vacilar.</p>
 
-<p class="verso"><strong>2.</strong> Assim compreendi que enfrentar a sombra é aceitar a responsabilidade pela própria complexidade, abandonando a fantasia de pureza absoluta e reconhecendo que maturidade nasce da integração consciente dos contrastes internos.</p>
-
+<p class="verso"><strong>VI.</strong> E se ainda restar dúvida sobre o sentido dessa travessia, que se recorde que nada verdadeiramente grandioso nasce intacto, nada verdadeiramente forte surge sem tensão, e nada verdadeiramente consciente floresce sem antes confrontar aquilo que mais teme, pois é no confronto com o desconhecido que o ser humano deixa de ser espectador da própria história e passa a ser autor deliberado do próprio destino.</p>
 </div>
 
-<!-- PÁGINA 4 -->
-<div class="pagina">
-<h2>CAPÍTULO III — DA RESISTÊNCIA</h2>
-
-<p class="verso"><strong>1.</strong> A resistência não consiste em endurecer o coração nem em negar a dor, mas em permanecer presente enquanto atravessamos desconfortos inevitáveis, sustentando o próprio peso com dignidade silenciosa e recusando a tentação de abandonar a jornada sempre que ela se torna exigente demais.</p>
-
-<p class="verso"><strong>2.</strong> Cada cicatriz tornou-se prova de que permaneci, de que suportei, de que atravessei períodos de incerteza sem me dissolver na desistência.</p>
-
+<!-- CONTROLES -->
+<div>
+<button onclick="voltar()">◀ Página Anterior</button>
+<button onclick="avancar()">Próxima Página ▶</button>
 </div>
 
-<!-- PÁGINA 5 -->
-<div class="pagina">
-<h2>CAPÍTULO IV — DA TRANSFORMAÇÃO</h2>
-
-<p class="verso"><strong>1.</strong> Transformação não ocorre por milagre repentino, mas por processo contínuo de revisão interna, onde crenças antigas são questionadas, atitudes imaturas são substituídas por responsabilidade e a percepção do mundo se expande na medida em que nos tornamos capazes de lidar com maior complexidade emocional.</p>
-
-<p class="verso"><strong>2.</strong> Assim como o metal submetido ao fogo revela sua forma mais resistente, a consciência submetida à reflexão revela sua maturidade.</p>
-
-</div>
-
-<!-- PÁGINA 6 -->
-<div class="pagina">
-<h2>EPÍLOGO</h2>
-
-<p class="verso"><strong>1.</strong> Não há condenação na profundidade, apenas entendimento; não há destruição na sombra, apenas contraste; não há fraqueza na carne que sente, apenas experiência acumulada que constrói a integridade daquele que escolhe permanecer consciente diante de si mesmo.</p>
-
-<p class="verso"><strong>2.</strong> Assim termina este tomo, não como sentença final, mas como convite permanente à investigação interior contínua.</p>
-
-</div>
-
-</div>
-
-<div class="controles">
-<button onclick="anterior()">← Página Anterior</button>
-<button onclick="proxima()">Próxima Página →</button>
 </div>
 
 <script>
-const paginas=document.querySelectorAll(".pagina");
-let paginaAtual=0;
+let paginaAtual = 1;
+const totalPaginas = 3;
 
-function mostrarPagina(i){
-paginas.forEach(p=>p.classList.remove("ativa"));
-paginas[i].classList.add("ativa");
-}
-
-function proxima(){
-if(paginaAtual<paginas.length-1){
-paginaAtual++;
-mostrarPagina(paginaAtual);
-}
+function mostrarPagina(num){
+    for(let i=1;i<=totalPaginas;i++){
+        document.getElementById("p"+i).classList.remove("ativa");
+    }
+    document.getElementById("p"+num).classList.add("ativa");
 }
 
-function anterior(){
-if(paginaAtual>0){
-paginaAtual--;
-mostrarPagina(paginaAtual);
+function avancar(){
+    if(paginaAtual < totalPaginas){
+        paginaAtual++;
+        mostrarPagina(paginaAtual);
+        window.scrollTo(0,0);
+    }
 }
+
+function voltar(){
+    if(paginaAtual > 1){
+        paginaAtual--;
+        mostrarPagina(paginaAtual);
+        window.scrollTo(0,0);
+    }
 }
 </script>
 
