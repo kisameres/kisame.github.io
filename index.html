@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evangelho da Carne nas Trevas</title>
+<title>Evangelho da Carne</title>
 
 <style>
 body {
@@ -12,120 +12,124 @@ body {
     background: black;
     color: #8b0000;
     font-family: Georgia, serif;
-    overflow: hidden;
-    cursor: crosshair;
+    text-align: center;
+    overflow-x: hidden;
+    transition: 1.5s;
 }
 
-/* Tela inicial */
-#intro {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 10;
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-#intro button {
+button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    font-size: 18px;
     background: transparent;
     border: 2px solid #8b0000;
     color: #8b0000;
-    padding: 15px 40px;
-    font-size: 20px;
-    letter-spacing: 3px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#intro button:hover {
+button:hover {
     background: #8b0000;
     color: black;
     box-shadow: 0 0 20px red;
 }
 
-/* Conteúdo */
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 60px 20px;
-    text-align: center;
-    display: none;
-    animation: fadeIn 3s ease-in-out;
-}
-
 h1 {
-    color: red;
-    text-shadow: 0 0 20px red;
     animation: pulse 2s infinite alternate;
 }
 
-p {
-    margin: 20px 0;
-    font-size: 18px;
+@keyframes pulse {
+    from { text-shadow: 0 0 10px red; }
+    to { text-shadow: 0 0 30px darkred; }
+}
+
+.hidden {
+    display: none;
 }
 
 .verso {
-    margin-top: 40px;
-    font-style: italic;
-    color: darkred;
+    margin: 20px 0;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
 }
 
-/* Animações */
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes pulse {
-    from {text-shadow: 0 0 10px red;}
-    to {text-shadow: 0 0 30px darkred;}
-}
-
-/* Névoa animada */
-body::before {
-    content: "";
-    position: fixed;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(139,0,0,0.1) 10%, transparent 60%);
-    animation: fog 15s infinite linear;
-}
-
-@keyframes fog {
-    from { transform: translate(-25%, -25%); }
-    to { transform: translate(-30%, -30%); }
+    to { opacity: 1; }
 }
 </style>
 </head>
 
 <body>
 
-<div id="intro">
-    <button onclick="entrar()">ENTRAR NO ABISMO</button>
+<div class="container" id="warning">
+    <h1>⚠️ LIMIAR ⚠️</h1>
+    <p id="text">Nem toda carne está pronta para a verdade.</p>
+    <button onclick="next()">Prosseguir</button>
 </div>
 
-<div class="container" id="conteudo">
-    <h1>EVANGELHO DA CARNE NAS TREVAS</h1>
+<div class="container hidden" id="evangelho">
+    <h1>📜 VERSÍCULOS DA CARNE NAS TREVAS 📜</h1>
 
-    <p>I — E eu me lancei ao abismo por vontade própria.</p>
-    <p>II — Rasguei o véu da minha alma e desci às catacumbas.</p>
-    <p>III — A treva era substância viva, quente como pecado antigo.</p>
-    <p>IV — Deixei que ela moldasse meus ossos como ferro em brasa.</p>
-    <p>V — Quando a noite tentou me consumir, encontrou trono.</p>
-    <p>VI — Não fui salvo. Não fui redimido. Fui forjado.</p>
-    <p>VII — Já não caminho na sombra — a sombra caminha em mim.</p>
-    <p>VIII — Sou carne nas trevas. Sou cicatriz na noite.</p>
+    <p class="verso">I — Desci às profundezas da minha própria matéria e encontrei não luz, mas pulsação crua. 
+Ali, onde o silêncio tem peso e a respiração é densa como ferro úmido, compreendi que a carne não é frágil — 
+é memória viva do que foi esquecido nas sombras.</p>
+    <p class="verso">II — A treva infiltrou-se em mim como neblina espessa, não para destruir, mas para revelar 
+as fissuras que eu escondia sob a superfície. 
+Cada medo apodreceu lentamente até tornar-se força, 
+e cada culpa dissolveu-se como sal na escuridão morna do abismo.</p>
+    <p class="verso">III — Meu corpo tornou-se templo abandonado onde ecos antigos sussurram verdades que a luz jamais suportaria ouvir. 
+Nas galerias internas do meu ser, algo desperta, lento e inevitável, 
+como ferrugem que consome o metal até que reste apenas essência.</p>
+    <p class="verso">IV — A carne tremeu diante do vazio, mas não recuou. 
+Abraçou o negror como quem aceita a própria origem, 
+como quem reconhece que o caos não é inimigo, 
+mas ventre onde toda transformação começa.</p>
+    <p class="verso">V — A noite tentou devorar-me, mas encontrou resistência enraizada nos ossos. 
+Não fui dissolvido; fui moldado. 
+Cada sombra que tocou minha pele deixou marca, 
+e cada marca tornou-se sinal de que sobrevivi ao que me queria apagar.</p>
+    <p class="verso">VI — O medo apodreceu dentro de mim até perder o odor da ameaça. 
+Restou apenas matéria bruta, 
+pulsando em silêncio, 
+como um coração que aprendeu a bater no escuro sem pedir aurora.</p>
+    <p class="verso">VII — Já não caminho à margem da escuridão. 
+Sou parte dela, como cicatriz que a noite carrega sem admitir. 
+Sou lembrança viva de que o abismo não consome todos — 
+alguns retornam diferentes.</p>
+    <p class="verso">VIII — E no centro da carne, onde pulsa o indizível, 
+ergue-se uma verdade sem nome: 
+não há queda quando se escolhe mergulhar. 
+Há apenas transformação.</p>
 
-    <p class="verso">𓆩鬼鮫𓆪</p>
+    <p style="margin-top:40px; color:#550000;">𓆩鬼鮫𓆪</p>
 </div>
 
 <script>
-function entrar() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("conteudo").style.display = "block";
+let fase = 0;
+
+function next(){
+    fase++;
+    const text = document.getElementById("text");
+
+    if(fase === 1){
+        text.innerHTML = "Tem certeza que deseja atravessar?";
+    }
+    else if(fase === 2){
+        text.innerHTML = "Depois disso, algo dentro de você pode mudar.";
+    }
+    else if(fase === 3){
+        document.body.style.background = "#0a0000";
+        document.getElementById("warning").classList.add("hidden");
+        document.getElementById("evangelho").classList.remove("hidden");
+        document.body.style.overflowY = "auto";
+    }
 }
 </script>
 
