@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liber Apocryphus — Tomo I</title>
+<title>Liber Apocryphus</title>
 
 <style>
 body{
@@ -18,48 +18,40 @@ body{
     width:90%;
     max-width:1000px;
     margin:40px auto;
-    perspective:2000px;
 }
 
 .pagina{
     display:none;
     background:#f4e7c5;
-    padding:70px;
-    min-height:75vh;
+    padding:60px;
+    min-height:70vh;
     border:8px solid #3b0000;
     box-shadow:0 0 100px black inset;
-    animation:abrir 1s ease forwards;
+    animation:fade 0.6s ease;
 }
 
-@keyframes abrir{
-    from{transform:rotateY(-90deg);opacity:0;}
-    to{transform:rotateY(0deg);opacity:1;}
+.pagina.ativa{
+    display:block;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
 }
 
 h1,h2{
     text-align:center;
-    letter-spacing:3px;
-}
-
-h1{
-    margin-bottom:40px;
-}
-
-h2{
-    margin-top:40px;
-    border-bottom:1px solid #5a0000;
-    padding-bottom:10px;
 }
 
 .verso{
-    margin:20px 0;
-    line-height:1.9;
-    font-size:19px;
+    margin:18px 0;
+    line-height:1.8;
     text-align:justify;
+    font-size:19px;
 }
 
 .verso::first-letter{
-    font-size:48px;
+    font-size:45px;
     float:left;
     margin-right:8px;
     font-weight:bold;
@@ -67,7 +59,7 @@ h2{
 
 .controles{
     text-align:center;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
 button{
@@ -83,118 +75,35 @@ button:hover{
     background:#aa0000;
     color:black;
 }
-
-.selo{
-    text-align:center;
-    margin-top:50px;
-    font-size:26px;
-    letter-spacing:6px;
-}
 </style>
 </head>
 <body>
 
 <div class="livro-container">
 
-<!-- PÁGINA 1 -->
-<div class="pagina" id="p1">
+<div class="pagina ativa">
 <h1>LIBER APOCRYPHUS</h1>
 <h2>PRÓLOGO</h2>
-
-<p class="verso"><strong>1.</strong> Este tomo não foi escrito para os apressados, nem para os que buscam consolo superficial; foi gravado na memória da experiência humana, onde a carne encontra o peso do existir e aprende que profundidade não é maldição, mas condição inevitável da consciência.</p>
-
-<p class="verso"><strong>2.</strong> Aquele que aqui lê deve compreender que cada palavra não acusa, não condena, não promete salvação, mas revela o processo silencioso pelo qual o ser humano amadurece ao confrontar a própria interioridade.</p>
-
-<p class="verso"><strong>3.</strong> Assim começa a jornada daquele que ousou descer e retornar.</p>
+<p class="verso"><strong>1.</strong> Este tomo não foi escrito para os apressados, mas para aqueles que suportam atravessar as próprias profundezas.</p>
+<p class="verso"><strong>2.</strong> Aqui começa a jornada da consciência que ousa descer.</p>
 </div>
 
-<!-- PÁGINA 2 -->
-<div class="pagina" id="p2">
+<div class="pagina">
 <h2>CAPÍTULO I — DA DESCIDA</h2>
-
-<p class="verso"><strong>1.</strong> No início da percepção inquieta, quando o homem ainda fugia de si mesmo, desceu às profundezas internas e encontrou não condenação, mas pulsação antiga que vibrava como tambor sob a terra úmida do ser.</p>
-
-<p class="verso"><strong>2.</strong> A escuridão revelou-se não como inimiga, mas como espelho ampliado, onde cada falha se tornava visível e cada medo exigia nome.</p>
-
-<p class="verso"><strong>3.</strong> E ao nomear seus temores, percebeu que metade de sua angústia era ignorância da própria força.</p>
-
-<p class="verso"><strong>4.</strong> Pois ninguém conhece a solidez da própria estrutura enquanto permanece na superfície.</p>
+<p class="verso"><strong>1.</strong> No princípio da inquietação interior, o homem encontrou não condenação, mas profundidade.</p>
+<p class="verso"><strong>2.</strong> E ao descer, descobriu que o medo era apenas resistência ao desconhecido.</p>
 </div>
 
-<!-- PÁGINA 3 -->
-<div class="pagina" id="p3">
+<div class="pagina">
 <h2>CAPÍTULO II — DAS SOMBRAS</h2>
-
-<p class="verso"><strong>1.</strong> A sombra não é ausência de luz, mas consequência dela; onde há consciência, há também contraste.</p>
-
-<p class="verso"><strong>2.</strong> Cada falha exposta tornou-se ferramenta de lapidação, cada vergonha tornou-se degrau invisível.</p>
-
-<p class="verso"><strong>3.</strong> Aprendeu-se que fugir prolonga o medo, mas encarar dissolve a ilusão.</p>
-
-<p class="verso"><strong>4.</strong> E aquele que permanece diante do próprio abismo descobre que o abismo também o contempla — não para destruir, mas para revelar profundidade.</p>
+<p class="verso"><strong>1.</strong> A sombra revelou o que estava oculto sob máscaras frágeis.</p>
+<p class="verso"><strong>2.</strong> E cada falha tornou-se ferramenta de crescimento.</p>
 </div>
 
-<!-- PÁGINA 4 -->
-<div class="pagina" id="p4">
-<h2>CAPÍTULO III — DA RESISTÊNCIA</h2>
-
-<p class="verso"><strong>1.</strong> A noite tentou dobrar-lhe os joelhos, mas encontrou ossos firmes moldados por quedas anteriores.</p>
-
-<p class="verso"><strong>2.</strong> Cada cicatriz tornou-se símbolo não de fraqueza, mas de permanência.</p>
-
-<p class="verso"><strong>3.</strong> Resistir não é endurecer; é manter-se consciente enquanto atravessa o desconforto.</p>
-
-<p class="verso"><strong>4.</strong> Assim se constrói a integridade: não pela ausência de dor, mas pela permanência apesar dela.</p>
-</div>
-
-<!-- PÁGINA 5 -->
-<div class="pagina" id="p5">
-<h2>CAPÍTULO IV — DA TRANSFORMAÇÃO</h2>
-
-<p class="verso"><strong>1.</strong> O metal submetido ao fogo não se queixa do calor; revela sua forma oculta.</p>
-
-<p class="verso"><strong>2.</strong> A consciência submetida à reflexão não se dissolve; amadurece.</p>
-
-<p class="verso"><strong>3.</strong> Assim, o ser humano torna-se inteiro não ao evitar profundidade, mas ao atravessá-la.</p>
-
-<p class="verso"><strong>4.</strong> Não há queda quando o mergulho é consciente.</p>
-</div>
-
-<!-- PÁGINA 6 -->
-<div class="pagina" id="p6">
-<h2>CAPÍTULO V — DA MATURIDADE</h2>
-
-<p class="verso"><strong>1.</strong> A maturidade não nasce da idade, mas do enfrentamento.</p>
-
-<p class="verso"><strong>2.</strong> Quem suporta o próprio silêncio aprende a ouvir além do ruído externo.</p>
-
-<p class="verso"><strong>3.</strong> E aquele que enfrenta sua própria complexidade deixa de temer a dos outros.</p>
-</div>
-
-<!-- PÁGINA 7 -->
-<div class="pagina" id="p7">
-<h2>CAPÍTULO VI — DO RETORNO</h2>
-
-<p class="verso"><strong>1.</strong> Nem todos que descem retornam iguais; alguns retornam lúcidos.</p>
-
-<p class="verso"><strong>2.</strong> O retorno não apaga o caminho percorrido; integra-o.</p>
-
-<p class="verso"><strong>3.</strong> E aquele que retorna diferente torna-se farol não por brilho, mas por profundidade.</p>
-</div>
-
-<!-- PÁGINA 8 -->
-<div class="pagina" id="p8">
-<h2>EPÍLOGO</h2>
-
-<p class="verso"><strong>1.</strong> Assim termina este tomo, não com sentença, mas com compreensão.</p>
-
-<p class="verso"><strong>2.</strong> A carne não é prisão; é experiência.</p>
-
-<p class="verso"><strong>3.</strong> A sombra não é condenação; é contraste.</p>
-
-<p class="verso"><strong>4.</strong> E o ser humano não é frágil por sentir — é profundo por suportar.</p>
-
-<div class="selo">✠ 𓆩鬼鮫𓆪 ✠</div>
+<div class="pagina">
+<h2>CAPÍTULO III — DA TRANSFORMAÇÃO</h2>
+<p class="verso"><strong>1.</strong> Nenhuma transformação ocorre sem atravessar desconforto.</p>
+<p class="verso"><strong>2.</strong> Assim amadurece aquele que permanece.</p>
 </div>
 
 </div>
@@ -205,31 +114,27 @@ button:hover{
 </div>
 
 <script>
-let paginaAtual=1;
-const totalPaginas=8;
+const paginas = document.querySelectorAll(".pagina");
+let paginaAtual = 0;
 
-function mostrarPagina(num){
-for(let i=1;i<=totalPaginas;i++){
-document.getElementById("p"+i).style.display="none";
-}
-document.getElementById("p"+num).style.display="block";
+function mostrarPagina(index){
+    paginas.forEach(p => p.classList.remove("ativa"));
+    paginas[index].classList.add("ativa");
 }
 
 function proxima(){
-if(paginaAtual<totalPaginas){
-paginaAtual++;
-mostrarPagina(paginaAtual);
-}
+    if(paginaAtual < paginas.length - 1){
+        paginaAtual++;
+        mostrarPagina(paginaAtual);
+    }
 }
 
 function anterior(){
-if(paginaAtual>1){
-paginaAtual--;
-mostrarPagina(paginaAtual);
+    if(paginaAtual > 0){
+        paginaAtual--;
+        mostrarPagina(paginaAtual);
+    }
 }
-}
-
-mostrarPagina(paginaAtual);
 </script>
 
 </body>
