@@ -1,6 +1,5 @@
 export default function LivroCorvo1963() {
-  const historia = `
-Em 1963, em uma pequena casa de madeira afastada da cidade, vivia um homem alto, de pele negra, cabelos escuros e mãos marcadas pelo trabalho pesado. Forte, gentil e silencioso, passava os dias trabalhando e as noites lendo livros e escrevendo histórias em velhos cadernos.
+  const historia = `Em 1963, em uma pequena casa de madeira afastada da cidade, vivia um homem alto, de pele negra, cabelos escuros e mãos marcadas pelo trabalho pesado. Forte, gentil e silencioso, passava os dias trabalhando e as noites lendo livros e escrevendo histórias em velhos cadernos.
 
 Certa manhã, viajando de trem para uma cidade pacata do interior, observava a paisagem pela janela enquanto segurava um livro sobre o colo. Quando o trem diminuiu a velocidade próximo à estação, ele a viu.
 
@@ -10,7 +9,7 @@ Quando desceu do trem, colocou o livro na bolsa, tirou um cigarro do bolso esque
 
 Ela percebeu.
 
-— O senhor vai continuar me olhando ou vai dizer alguma coisa? — perguntou ela, com um pequeno sorriso.
+— O senhor vai continuar me olhando ou vai dizer alguma coisa?
 
 Ele soltou a fumaça devagar.
 
@@ -189,58 +188,69 @@ O Corvo permaneceu em silêncio por alguns segundos.
 
 Depois acendeu outro cigarro.
 
-— Sobreviver.
-`;
+— Sobreviver.`;
 
   return (
-    <div className="min-h-screen bg-[#2b2118] flex items-center justify-center p-6 overflow-hidden">
-      <div className="relative max-w-6xl w-full bg-[#e8d8b5] rounded-3xl shadow-2xl border-[12px] border-[#4a3525] flex flex-col md:flex-row overflow-hidden">
-        <div className="absolute left-1/2 top-0 bottom-0 w-3 bg-[#5c4432] opacity-60 hidden md:block" />
+    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(80,80,80,0.15),transparent_50%)]" />
 
-        <div className="w-full md:w-1/2 p-10 border-b md:border-b-0 md:border-r border-[#b89b6d]">
-          <h1 className="text-5xl font-serif text-[#3b2617] mb-4 tracking-wide">
-            O Corvo
-          </h1>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-10">
+        <div className="border border-zinc-800 bg-zinc-950 rounded-[40px] overflow-hidden shadow-[0_0_80px_rgba(255,255,255,0.05)]">
+          <div className="grid md:grid-cols-2 min-h-screen">
+            <div className="relative p-8 md:p-16 border-r border-zinc-800 bg-gradient-to-br from-zinc-950 to-black">
+              <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
 
-          <p className="text-[#6b4b35] italic text-lg mb-8 font-serif">
-            Uma história sobre guerra, silêncio e fantasmas do passado.
-          </p>
+              <div className="relative z-10">
+                <p className="uppercase tracking-[10px] text-zinc-500 text-sm mb-6 font-serif">
+                  Romance Noir • 1963
+                </p>
 
-          <div className="space-y-5 text-[#2d1c10] leading-8 text-lg font-serif whitespace-pre-line max-h-[70vh] overflow-y-auto pr-4">
-            {historia}
-          </div>
-        </div>
+                <h1 className="text-6xl md:text-8xl font-serif font-bold text-white leading-none mb-6">
+                  O Corvo
+                </h1>
 
-        <div className="w-full md:w-1/2 p-10 flex flex-col justify-center bg-[#d9c39a] relative">
-          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle,_#000_1px,_transparent_1px)] bg-[size:20px_20px]" />
+                <div className="w-32 h-[2px] bg-zinc-700 mb-8" />
 
-          <div className="relative z-10">
-            <h2 className="text-4xl font-serif text-[#3b2617] mb-6">
-              Capítulo I
-            </h2>
+                <p className="text-zinc-400 text-xl leading-9 font-serif max-w-xl">
+                  Uma história sobre guerra, silêncio, máfia e fantasmas que nunca morreram.
+                </p>
 
-            <div className="bg-[#f2e6ca] p-8 rounded-2xl shadow-inner border border-[#b89b6d]">
-              <p className="font-serif text-xl text-[#2b1b10] leading-9 italic">
-                “Na guerra o chamavam de Corvo.
-                Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
-              </p>
+                <div className="mt-16 border border-zinc-800 rounded-3xl p-8 bg-zinc-900/40 backdrop-blur-sm shadow-inner">
+                  <p className="text-2xl italic text-zinc-200 leading-10 font-serif">
+                    “Na guerra o chamavam de Corvo. Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
+                  </p>
+                </div>
+
+                <div className="mt-14 flex gap-4 flex-wrap">
+                  <button className="px-8 py-4 bg-white text-black rounded-2xl font-semibold hover:scale-105 transition-all duration-300 shadow-2xl">
+                    Ler História
+                  </button>
+
+                  <button className="px-8 py-4 border border-zinc-700 rounded-2xl text-zinc-300 hover:bg-zinc-900 transition-all duration-300">
+                    Capítulo I
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <div className="mt-10 space-y-4 text-[#3b2617] font-serif text-lg leading-8">
-              <p>
-                • Ambiente inspirado em romances noir dos anos 60.
-              </p>
-              <p>
-                • Mistura de drama, guerra, máfia e romance.
-              </p>
-              <p>
-                • O passado do Corvo ainda está vivo.
-              </p>
-            </div>
+            <div className="relative bg-[#090909] p-8 md:p-14 overflow-y-auto max-h-screen">
+              <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(circle,#ffffff_1px,transparent_1px)] bg-[size:24px_24px]" />
 
-            <button className="mt-10 px-8 py-4 rounded-2xl bg-[#3b2617] text-[#f4e7cb] text-lg font-serif shadow-lg hover:scale-105 transition-transform duration-300">
-              Continuar História
-            </button>
+              <div className="relative z-10">
+                <h2 className="text-4xl font-serif text-white mb-10 border-b border-zinc-800 pb-5">
+                  Capítulo I
+                </h2>
+
+                <div className="space-y-7 whitespace-pre-line text-zinc-300 leading-10 text-[19px] font-serif">
+                  {historia}
+                </div>
+
+                <div className="mt-16 border-t border-zinc-800 pt-8 flex items-center justify-between text-zinc-500 font-serif">
+                  <span>1963 • Cidade Pacata</span>
+                  <span>Página 1</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
