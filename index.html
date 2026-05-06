@@ -1,5 +1,165 @@
-export default function LivroCorvo1963() {
-  const historia = `Em 1963, em uma pequena casa de madeira afastada da cidade, vivia um homem alto, de pele negra, cabelos escuros e mãos marcadas pelo trabalho pesado. Forte, gentil e silencioso, passava os dias trabalhando e as noites lendo livros e escrevendo histórias em velhos cadernos.
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Corvo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #050505;
+      color: #e5e5e5;
+      font-family: Georgia, serif;
+      overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 40%);
+      z-index: -1;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 1400px;
+      margin: 40px auto;
+      border: 1px solid #222;
+      border-radius: 30px;
+      overflow: hidden;
+      background: #0b0b0b;
+      box-shadow: 0 0 80px rgba(255,255,255,0.05);
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      width: 40%;
+      min-width: 300px;
+      padding: 60px;
+      border-right: 1px solid #1f1f1f;
+      background: linear-gradient(to bottom right, #0d0d0d, #000000);
+    }
+
+    .right {
+      width: 60%;
+      min-width: 300px;
+      padding: 60px;
+      background: #090909;
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .subtitle {
+      letter-spacing: 8px;
+      color: #666;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: 90px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .line {
+      width: 120px;
+      height: 2px;
+      background: #333;
+      margin-bottom: 30px;
+    }
+
+    .description {
+      font-size: 24px;
+      color: #999;
+      line-height: 1.8;
+    }
+
+    .quote {
+      margin-top: 60px;
+      padding: 40px;
+      border: 1px solid #222;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.02);
+      font-size: 28px;
+      line-height: 1.8;
+      font-style: italic;
+      color: #ddd;
+    }
+
+    h2 {
+      font-size: 45px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #222;
+      padding-bottom: 20px;
+      color: white;
+    }
+
+    .story {
+      white-space: pre-line;
+      line-height: 2.2;
+      font-size: 20px;
+      color: #cfcfcf;
+    }
+
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #222;
+      display: flex;
+      justify-content: space-between;
+      color: #666;
+    }
+
+    @media(max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="container">
+    <div class="left">
+      <div class="subtitle">Romance Noir • 1963</div>
+
+      <h1>O Corvo</h1>
+
+      <div class="line"></div>
+
+      <p class="description">
+        Uma história sobre guerra, silêncio, máfia e fantasmas que nunca morreram.
+      </p>
+
+      <div class="quote">
+        “Na guerra o chamavam de Corvo. Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Capítulo I</h2>
+
+      <div class="story">
+Em 1963, em uma pequena casa de madeira afastada da cidade, vivia um homem alto, de pele negra, cabelos escuros e mãos marcadas pelo trabalho pesado. Forte, gentil e silencioso, passava os dias trabalhando e as noites lendo livros e escrevendo histórias em velhos cadernos.
 
 Certa manhã, viajando de trem para uma cidade pacata do interior, observava a paisagem pela janela enquanto segurava um livro sobre o colo. Quando o trem diminuiu a velocidade próximo à estação, ele a viu.
 
@@ -43,217 +203,14 @@ A garota tremia.
 
 — Obrigada…
 
-Ela o abraçou sem perceber, como alguém desesperado por segurança. Depois de alguns segundos, começou a chorar.
-
-— Ei… o que aconteceu?
-
-Ela respirou fundo antes de responder:
-
-— Meu pai… ele devia dinheiro.
-
-— Que tipo de dinheiro?
-
-— Apostas. Jogos ilegais… ele tentou enganar pessoas perigosas.
-
-O homem ficou em silêncio enquanto ela continuava.
-
-— Eles mataram ele hoje de manhã. Eu ouvi os tiros… eu fugi antes deles entrarem na casa.
-
-As mãos dela tremiam.
-
-— E agora estão atrás de você.
-
-Ela assentiu lentamente.
-
-— Eu não tenho pra onde ir…
-
-Antes que ele respondesse, faróis surgiram no fim da rua. Um carro preto atravessava lentamente a neblina.
-
-O homem observou em silêncio.
-
-— Eles encontraram você.
-
-Ela arregalou os olhos.
-
-— O que a gente faz?!
-
-Ele abriu o casaco devagar, revelando a espingarda escondida.
-
-— Fica atrás de mim.
-
-Quando segurou a arma, memórias da guerra retornaram como fantasmas.
-
-O cheiro de pólvora.
-As trincheiras cobertas de lama.
-Os gritos.
-A morte.
-
-Na guerra o chamavam de Corvo.
-
-Um soldado silencioso que sobrevivia onde ninguém sobrevivia.
-
-Os mafiosos saíram do carro armados.
-
-— Achamos ela!
-
-Um deles apontou a arma.
-
-— Mata os dois.
-
-Então o homem puxou lentamente o ferrolho da espingarda.
-
-CLACK.
-
-Um dos mafiosos estreitou os olhos.
-
-— Espera… esse som…
-
-O primeiro tiro ecoou pela rua.
-
-Depois outro.
-
-E outro.
-
-Em segundos, os corpos estavam caídos no chão molhado pela chuva. O olhar gentil do homem havia desaparecido completamente.
-
-A garota observava sem conseguir respirar.
-
-— Quem… quem é você…?
-
-Ele permaneceu em silêncio.
-
-Um dos mafiosos ainda respirava, cuspindo sangue enquanto ria.
-
-— Então é verdade… você tá vivo…
-
-O homem se aproximou lentamente.
-
-— Como você sabe esse nome?
-
-O mafioso sorriu.
-
-— Corvo…
-
-Naquele instante, o homem congelou.
-
-Ninguém mais deveria conhecer aquele nome.
-
-Confuso, virou o corpo do mafioso com o pé e percebeu uma velha cicatriz atravessando o rosto dele.
-
-Então olhou os outros corpos.
-
-E reconheceu todos.
-
-Antigos companheiros da guerra.
-
-Homens que lutaram ao lado dele anos atrás.
-
-A expressão do Corvo mudou pela primeira vez.
-
-— Não… não pode ser…
-
-O mafioso riu mais uma vez.
-
-— Belladonna encontrou todos nós depois da guerra… deu trabalho pra quem só sabia matar…
-
-O Corvo apertou a arma com força.
-
-— Belladonna…
-
-O homem tossiu sangue antes de continuar:
-
-— Você matou o filho dele hoje…
-
-A garota ficou pálida.
-
-— Filho…?
-
-O mafioso sorriu ensanguentado.
-
-— Don Vittorio Belladonna… o maior mafioso desse país…
-
-Então olhou diretamente para o Corvo.
-
-— Você mexeu no ninho de vespas errado…
-
-E morreu sorrindo.
-
-A chuva começou a cair mais forte.
-
-A garota olhou para ele assustada.
-
-— O que a gente vai fazer agora…?
-
-O Corvo permaneceu em silêncio por alguns segundos.
-
-Depois acendeu outro cigarro.
-
-— Sobreviver.`;
-
-  return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(80,80,80,0.15),transparent_50%)]" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-10">
-        <div className="border border-zinc-800 bg-zinc-950 rounded-[40px] overflow-hidden shadow-[0_0_80px_rgba(255,255,255,0.05)]">
-          <div className="grid md:grid-cols-2 min-h-screen">
-            <div className="relative p-8 md:p-16 border-r border-zinc-800 bg-gradient-to-br from-zinc-950 to-black">
-              <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')]" />
-
-              <div className="relative z-10">
-                <p className="uppercase tracking-[10px] text-zinc-500 text-sm mb-6 font-serif">
-                  Romance Noir • 1963
-                </p>
-
-                <h1 className="text-6xl md:text-8xl font-serif font-bold text-white leading-none mb-6">
-                  O Corvo
-                </h1>
-
-                <div className="w-32 h-[2px] bg-zinc-700 mb-8" />
-
-                <p className="text-zinc-400 text-xl leading-9 font-serif max-w-xl">
-                  Uma história sobre guerra, silêncio, máfia e fantasmas que nunca morreram.
-                </p>
-
-                <div className="mt-16 border border-zinc-800 rounded-3xl p-8 bg-zinc-900/40 backdrop-blur-sm shadow-inner">
-                  <p className="text-2xl italic text-zinc-200 leading-10 font-serif">
-                    “Na guerra o chamavam de Corvo. Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
-                  </p>
-                </div>
-
-                <div className="mt-14 flex gap-4 flex-wrap">
-                  <button className="px-8 py-4 bg-white text-black rounded-2xl font-semibold hover:scale-105 transition-all duration-300 shadow-2xl">
-                    Ler História
-                  </button>
-
-                  <button className="px-8 py-4 border border-zinc-700 rounded-2xl text-zinc-300 hover:bg-zinc-900 transition-all duration-300">
-                    Capítulo I
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative bg-[#090909] p-8 md:p-14 overflow-y-auto max-h-screen">
-              <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(circle,#ffffff_1px,transparent_1px)] bg-[size:24px_24px]" />
-
-              <div className="relative z-10">
-                <h2 className="text-4xl font-serif text-white mb-10 border-b border-zinc-800 pb-5">
-                  Capítulo I
-                </h2>
-
-                <div className="space-y-7 whitespace-pre-line text-zinc-300 leading-10 text-[19px] font-serif">
-                  {historia}
-                </div>
-
-                <div className="mt-16 border-t border-zinc-800 pt-8 flex items-center justify-between text-zinc-500 font-serif">
-                  <span>1963 • Cidade Pacata</span>
-                  <span>Página 1</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+Ela o abraçou sem perceber, como alguém desesperado por segurança.
+      </div>
+
+      <div class="footer">
+        <span>1963 • Cidade Pacata</span>
+        <span>Página 1</span>
       </div>
     </div>
-  );
-}
+  </div>
+</body>
+</html>
