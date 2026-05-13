@@ -1,171 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>O Corvo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Corvo</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    body {
-      background: #050505;
-      color: #e5e5e5;
-      font-family: Georgia, serif;
-      overflow-x: hidden;
-    }
+body{
+background:#050505;
+color:#e5e5e5;
+font-family:Georgia,serif;
+overflow-x:hidden;
+}
 
-    .background {
-      position: fixed;
-      inset: 0;
-      background: radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 40%);
-      z-index: -1;
-    }
+.background{
+position:fixed;
+inset:0;
+background:radial-gradient(circle at top, rgba(255,255,255,0.05), transparent 40%);
+z-index:-1;
+}
 
-    .container {
-      width: 95%;
-      max-width: 1400px;
-      margin: 40px auto;
-      border: 1px solid #222;
-      border-radius: 30px;
-      overflow: hidden;
-      background: #0b0b0b;
-      box-shadow: 0 0 80px rgba(255,255,255,0.05);
-      display: flex;
-      flex-wrap: wrap;
-    }
+.container{
+width:95%;
+max-width:1400px;
+margin:40px auto;
+background:#0b0b0b;
+border:1px solid #222;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 0 60px rgba(255,255,255,0.04);
+display:flex;
+flex-wrap:wrap;
+}
 
-    .left {
-      width: 40%;
-      min-width: 300px;
-      padding: 60px;
-      border-right: 1px solid #1f1f1f;
-      background: linear-gradient(to bottom right, #0d0d0d, #000000);
-    }
+.left{
+width:40%;
+padding:60px;
+border-right:1px solid #222;
+background:linear-gradient(to bottom right,#111,#000);
+}
 
-    .right {
-      width: 60%;
-      min-width: 300px;
-      padding: 60px;
-      background: #090909;
-      max-height: 100vh;
-      overflow-y: auto;
-    }
+.right{
+width:60%;
+padding:60px;
+max-height:100vh;
+overflow-y:auto;
+}
 
-    .subtitle {
-      letter-spacing: 8px;
-      color: #666;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
+.subtitle{
+color:#777;
+letter-spacing:6px;
+text-transform:uppercase;
+font-size:12px;
+margin-bottom:20px;
+}
 
-    h1 {
-      font-size: 90px;
-      margin-bottom: 20px;
-      color: white;
-    }
+h1{
+font-size:72px;
+margin-bottom:20px;
+}
 
-    .line {
-      width: 120px;
-      height: 2px;
-      background: #333;
-      margin-bottom: 30px;
-    }
+.line{
+width:120px;
+height:2px;
+background:#333;
+margin-bottom:30px;
+}
 
-    .description {
-      font-size: 24px;
-      color: #999;
-      line-height: 1.8;
-    }
+.description{
+font-size:22px;
+line-height:1.8;
+color:#999;
+}
 
-    .quote {
-      margin-top: 60px;
-      padding: 40px;
-      border: 1px solid #222;
-      border-radius: 25px;
-      background: rgba(255,255,255,0.02);
-      font-size: 28px;
-      line-height: 1.8;
-      font-style: italic;
-      color: #ddd;
-    }
+.quote{
+margin-top:50px;
+padding:35px;
+border:1px solid #222;
+border-radius:20px;
+background:#101010;
+font-size:28px;
+line-height:1.7;
+font-style:italic;
+}
 
-    h2 {
-      font-size: 45px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid #222;
-      padding-bottom: 20px;
-      color: white;
-    }
+h2{
+font-size:42px;
+margin-bottom:40px;
+padding-bottom:20px;
+border-bottom:1px solid #222;
+}
 
-    .story {
-      white-space: pre-line;
-      line-height: 2.2;
-      font-size: 20px;
-      color: #cfcfcf;
-    }
+.story{
+white-space:pre-line;
+font-size:20px;
+line-height:2.2;
+color:#cfcfcf;
+}
 
-    .footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #222;
-      display: flex;
-      justify-content: space-between;
-      color: #666;
-    }
+.footer{
+margin-top:60px;
+padding-top:20px;
+border-top:1px solid #222;
+display:flex;
+justify-content:space-between;
+color:#666;
+}
 
-    @media(max-width: 900px) {
-      .container {
-        flex-direction: column;
-      }
+@media(max-width:900px){
+.container{
+flex-direction:column;
+}
 
-      .left,
-      .right {
-        width: 100%;
-      }
+.left,
+.right{
+width:100%;
+}
 
-      h1 {
-        font-size: 60px;
-      }
-    }
-  </style>
+h1{
+font-size:50px;
+}
+}
+</style>
 </head>
+
 <body>
-  <div class="background"></div>
+<div class="background"></div>
 
-  <div class="container">
-    <div class="left">
-      <div class="subtitle">Romance Noir • 1963</div>
+<div class="container">
+<div class="left">
+<div class="subtitle">Romance Noir • 1963</div>
+<h1>O Corvo</h1>
+<div class="line"></div>
 
-      <h1>O Corvo</h1>
+<p class="description">
+Uma história sobre guerra, máfia, silêncio e fantasmas do passado.
+</p>
 
-      <div class="line"></div>
+<div class="quote">
+“Na guerra o chamavam de Corvo. Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
+</div>
+</div>
 
-      <p class="description">
-        Uma história sobre guerra, silêncio, máfia e fantasmas que nunca morreram.
-      </p>
+<div class="right">
+<h2>Capítulo I</h2>
 
-      <div class="quote">
-        “Na guerra o chamavam de Corvo. Um soldado silencioso que sobrevivia onde ninguém sobrevivia.”
-      </div>
-    </div>
-
-    <div class="right">
-      <h2>Capítulo I</h2>
-
-      <div class="story">
+<div class="story">
 Em 1963, em uma pequena casa de madeira afastada da cidade, vivia um homem alto, de pele negra, cabelos escuros e mãos marcadas pelo trabalho pesado. Forte, gentil e silencioso, passava os dias trabalhando e as noites lendo livros e escrevendo histórias em velhos cadernos.
 
 Certa manhã, viajando de trem para uma cidade pacata do interior, observava a paisagem pela janela enquanto segurava um livro sobre o colo. Quando o trem diminuiu a velocidade próximo à estação, ele a viu.
 
 Uma jovem morena, de cabelos cacheados balançando ao vento, segurava algumas folhas contra o peito enquanto tentava impedir que o vento as levasse. Por um instante, os olhos dos dois se encontraram.
 
-Quando desceu do trem, colocou o livro na bolsa, tirou um cigarro do bolso esquerdo e o acendeu com suas mãos calejadas e machucadas. Ficou admirando a moça por alguns segundos.
+Quando desceu do trem, colocou o livro na bolsa, tirou um cigarro do bolso esquerdo e o acendeu com suas mãos calejadas e machucadas.
 
 Ela percebeu.
 
@@ -175,187 +168,258 @@ Ele soltou a fumaça devagar.
 
 — Desculpe… só achei você bonita.
 
-A garota desviou o olhar, um pouco envergonhada.
+A garota desviou o olhar, envergonhada.
 
 — Direto assim?
 
 — Não gosto de desperdiçar palavras.
 
-Ela riu baixo antes de se afastar, e ele finalmente voltou à realidade para seguir seus afazeres pela cidade.
+Ela riu baixo antes de se afastar.
 
-Primeiro entrou em uma loja de ternos e comprou um terno escuro e elegante. Depois passou numa tabacaria antiga e comprou um charuto caro. Sua última parada foi uma loja de caça no fim da cidade, onde comprou um machado e uma espingarda.
+Mais tarde, o homem passou por uma loja de ternos, uma tabacaria e uma velha loja de caça onde comprou um machado e uma espingarda.
 
-O vendedor estranhou a compra.
+Quando saiu, encontrou novamente a garota perto da igreja da cidade.
 
-— Vai caçar alguma coisa grande?
+Ela parecia assustada.
 
-O homem pegou a arma e respondeu calmamente:
-
-— Espero que não.
-
-Quando saiu da loja, o céu começava a escurecer. Ao longe viu novamente a jovem perto da igreja da cidade. Dessa vez ela parecia assustada.
-
-Ele caminhou até ela e colocou seu casaco sobre seus ombros.
+Ele colocou o casaco sobre os ombros dela.
 
 — Você vai congelar nesse frio.
 
-A garota tremia.
+A garota o abraçou.
 
-— Obrigada…
+Depois começou a chorar.
 
-Ela o abraçou sem perceber, como alguém desesperado por segurança. Depois de alguns segundos, começou a chorar.
+— Meu pai devia dinheiro… apostas… eles mataram ele hoje de manhã.
 
-— Ei… o que aconteceu?
-
-Ela respirou fundo antes de responder:
-
-— Meu pai… ele devia dinheiro.
-
-— Que tipo de dinheiro?
-
-— Apostas. Jogos ilegais… ele tentou enganar pessoas perigosas.
-
-O homem ficou em silêncio enquanto ela continuava.
-
-— Eles mataram ele hoje de manhã. Eu ouvi os tiros… eu fugi antes deles entrarem na casa.
-
-As mãos dela tremiam.
+O homem permaneceu em silêncio.
 
 — E agora estão atrás de você.
 
-Ela assentiu lentamente.
+Ela assentiu.
 
 — Eu não tenho pra onde ir…
 
-Antes que ele respondesse, faróis surgiram no fim da rua. Um carro preto atravessava lentamente a neblina.
+Então faróis surgiram na neblina.
 
-O homem observou em silêncio.
+Um carro preto.
 
-— Eles encontraram você.
+Os mafiosos haviam encontrado ela.
 
-Ela arregalou os olhos.
-
-— O que a gente faz?!
-
-Ele abriu o casaco devagar, revelando a espingarda escondida.
+O homem abriu lentamente o casaco revelando a espingarda.
 
 — Fica atrás de mim.
 
-Quando segurou a arma, memórias da guerra retornaram como fantasmas.
+Quando segurou a arma, memórias da guerra voltaram.
 
 O cheiro de pólvora.
-As trincheiras cobertas de lama.
-Os gritos.
-A morte.
+As trincheiras.
+Os mortos.
 
 Na guerra o chamavam de Corvo.
 
 Um soldado silencioso que sobrevivia onde ninguém sobrevivia.
 
-Os mafiosos saíram do carro armados.
+Os mafiosos desceram do carro armados.
 
-— Achamos ela!
+— Mata os dois!
 
-Um deles apontou a arma.
-
-— Mata os dois.
-
-Então o homem puxou lentamente o ferrolho da espingarda.
+Então o Corvo puxou o ferrolho da espingarda.
 
 CLACK.
 
-Um dos mafiosos estreitou os olhos.
-
-— Espera… esse som…
-
-O primeiro tiro ecoou pela rua.
+O primeiro tiro ecoou.
 
 Depois outro.
 
 E outro.
 
-Em segundos, os corpos estavam caídos no chão molhado pela chuva. O olhar gentil do homem havia desaparecido completamente.
+Em segundos, os corpos estavam espalhados pela rua.
 
 A garota observava sem conseguir respirar.
 
-— Quem… quem é você…?
+— Quem… quem é você?
 
-Ele permaneceu em silêncio.
-
-Um dos mafiosos ainda respirava, cuspindo sangue enquanto ria.
+Um dos mafiosos ainda respirava.
 
 — Então é verdade… você tá vivo…
 
-O homem se aproximou lentamente.
-
 — Como você sabe esse nome?
-
-O mafioso sorriu.
-
-— Corvo…
-
-Naquele instante, o homem congelou.
-
-Ninguém mais deveria conhecer aquele nome.
-
-Confuso, virou o corpo do mafioso com o pé e percebeu uma velha cicatriz atravessando o rosto dele.
-
-Então olhou os outros corpos.
-
-E reconheceu todos.
-
-Antigos companheiros da guerra.
-
-Homens que lutaram ao lado dele anos atrás.
-
-A expressão do Corvo mudou pela primeira vez.
-
-— Não… não pode ser…
-
-O mafioso riu mais uma vez.
-
-— Belladonna encontrou todos nós depois da guerra… deu trabalho pra quem só sabia matar…
-
-O Corvo apertou a arma com força.
-
-— Belladonna…
-
-O homem tossiu sangue antes de continuar:
-
-— Você matou o filho dele hoje…
-
-A garota ficou pálida.
-
-— Filho…?
 
 O mafioso sorriu ensanguentado.
 
+— Corvo…
+
+O homem congelou.
+
+Ninguém deveria lembrar daquele nome.
+
+Então percebeu algo pior.
+
+Todos aqueles homens eram antigos companheiros da guerra.
+
+Homens que lutaram ao lado dele anos atrás.
+
+O mafioso tossiu sangue.
+
+— Belladonna encontrou todos nós depois da guerra…
+
+O Corvo apertou a arma.
+
+— Belladonna…
+
+— Você matou o filho dele hoje.
+
+A garota ficou pálida.
+
 — Don Vittorio Belladonna… o maior mafioso desse país…
 
-Então olhou diretamente para o Corvo.
-
-— Você mexeu no ninho de vespas errado…
-
 E morreu sorrindo.
+</div>
 
-A chuva começou a cair mais forte.
+<div class="footer">
+<span>Cidade Pacata • 1963</span>
+<span>Página 1</span>
+</div>
+</div>
+</div>
 
-A garota olhou para ele assustada.
+<div class="container">
+<div class="left">
+<div class="subtitle">Capítulo II • O Retorno</div>
+<h1>A Guerra Nunca Acaba</h1>
+<div class="line"></div>
 
-— O que a gente vai fazer agora…?
+<p class="description">
+O passado voltou junto da chuva.
+</p>
 
-O Corvo permaneceu em silêncio por alguns segundos.
+<div class="quote">
+“Você devia ter morrido naquele dia, Corvo.”
+</div>
+</div>
 
-Depois acendeu outro cigarro.
+<div class="right">
+<h2>Capítulo II</h2>
 
-— Sobreviver.
-      </div>
+<div class="story">
+A chuva ainda caía forte sobre a cidade enquanto os corpos permaneciam espalhados pela rua. O Corvo fumava em silêncio observando os reflexos vermelhos das luzes misturados à água no chão.
 
-      <div class="footer">
-        <span>1963 • Cidade Pacata</span>
-        <span>Página 1</span>
-      </div>
-    </div>
-  </div>
+Então encontrou uma fotografia velha e manchada de sangue.
+
+Nela havia vários soldados diante de uma trincheira.
+
+Entre eles estava o próprio Corvo.
+
+Mas também havia outro homem.
+
+Um homem usando sobretudo militar escuro.
+
+Seu rosto estava riscado propositalmente.
+
+— Você conhece ele…?
+
+— Conheço.
+
+A voz do Corvo ficou pesada.
+
+— Esse homem devia estar morto.
+
+Sirene.
+
+Polícia.
+
+Mas Belladonna controlava policiais, juízes e políticos.
+
+Então novos faróis começaram a surgir.
+
+Mais carros.
+Mais armas.
+Mais homens.
+
+O Corvo destravou novamente a espingarda.
+
+CLACK.
+
+E então surgiu um sorriso.
+
+Frio.
+Sádico.
+Assustador.
+
+O massacre começou.
+
+A espingarda rugia.
+O machado atravessava carne e madeira.
+
+Homens gritavam desesperados.
+
+— O Corvo voltou!
+
+A fumaça dos tiros se misturava à neblina.
+
+Então aconteceu.
+
+TATATATATATA.
+
+O som atravessou a rua como um pesadelo.
+
+O Corvo congelou.
+
+Ele conhecia aquele som.
+
+Uma Pistola Mitralieră Modelo 1963.
+
+Somente uma pessoa usava aquela arma.
+
+O cigarro caiu lentamente de sua boca.
+
+Suas mãos começaram a tremer.
+
+Então as lembranças da guerra voltaram.
+
+Neve.
+Sangue.
+Bombardeios.
+Soldados mortos.
+
+Uma base militar pegando fogo.
+
+E uma voz.
+
+“Você devia ter morrido naquele dia, Corvo.”
+
+Passos ecoaram lentamente na neblina.
+
+Os mafiosos sobreviventes começaram a recuar imediatamente.
+
+Nem eles queriam ficar ali.
+
+Então uma silhueta surgiu.
+
+Um homem alto usando sobretudo militar.
+
+A submetralhadora fumegava em suas mãos.
+
+Parte do rosto estava coberta por cicatrizes queimadas.
+
+Então ele sorriu.
+
+Um sorriso vazio.
+
+— Quanto tempo, Corvo.
+
+E pela primeira vez em muitos anos…
+
+o Corvo sentiu medo.
+</div>
+
+<div class="footer">
+<span>Noite Chuvosa • 1963</span>
+<span>Página 2</span>
+</div>
+</div>
+</div>
+
 </body>
 </html>
